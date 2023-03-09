@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+
+
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url(./images/main.jpg);
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 710vh;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+  background-color: black;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline;
+  padding: 0 1rem;
+}
+
+.nav-links a {
+  font-size: 600;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.4;
+}
+
+.title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%);
+  font-size: 2.2rem;
+  /* opacity: 0; */
+}
+
+/* .title.active { */
+  /* opacity: 1; */
+  /* transition: all 3s; */
+/* } */
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.img-wrap {
+  margin-left: -5px;
+  position: relative;
+  top: 40%;
+  height: 80%;
+  width: 1px;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.img-wrap.active {
+  width: 770px;
+  opacity: 1;
+  transition: opacity 1s, width 2s;
+  max-width: 100%;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.6);
+}
+
+.img-wrap .title .active > img {
+  transform: scale(1);
+  transition: 1s ease-out;
+}
+
+h2 {
+  position: absolute;
+  font-size: 2.3rem;
+  top: 90%;
+  z-index: 2;
+  letter-spacing: 2px;
+  /* opacity: 0; */
+  transition: all 0.2s;
+}
+
+h2.active {
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+.titlepage {
+  line-height: 3;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  width: 960px;
+}
+
+.inner {
+  width: 960px;
+  margin: right;
+  box-sizing: border-box;
+}
+
+.mt-5 {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 1.4rem;
+    display: inline;
+  }
+
+  nav {
+    line-height: 60px;
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+  
+  .titlepage {
+    font-size: 1.2rem;
+  }
+
+  .img-wrap.active{
+    max-width: 100%;
+  }
+    img {
+      width: 100%;
+    }
+
+    .daimei {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px;
+    }
+  }
+  

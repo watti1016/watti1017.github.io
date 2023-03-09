@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>カフェサイト</title>
+    <meta name="description" content="This site is a test site." />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="title">
+      <h1>Welcome Cafe</h1>
+    </div>
+    <nav>
+      <div class="nav-links">
+        <ul>
+          <a href=""><li>home</li></a>
+          <a href=""><li>menu</li></a>
+          <a href="#titlepage"><li>access</li></a>
+        </ul>
+      </div>
+    </nav>
+    <section>
+      <h2>Cross Scroll</h2>
+      <div class="img-wrap">
+        <img src="./images/1.jpg" width="770" height="80%" />
+      </div>
+    </section>
+    <section>
+      <h2>Cross Scroll</h2>
+      <div class="img-wrap">
+        <img src="./images/2.jpg" width="770" height="80%" />
+      </div>
+    </section>
+    <section>
+      <h2>Cross Scroll</h2>
+      <div class="img-wrap">
+        <img src="./images/3.jpg" width="770" height="80%" />
+      </div>
+    </section>
+    <section>
+      <h2>Cross Scroll</h2>
+      <div class="img-wrap">
+        <img src="./images/4.jpg" width="770" height="80%" />
+      </div>
+    </section>
+    <section>
+      <h2>Cross Scroll</h2>
+      <div class="img-wrap">
+        <img src="./images/5.jpg" width="770" height="80%" />
+      </div>
+    </section>
+    <section>
+      <div class="container">
+          <div class="daimei">
+            <p class="mt-5 text-center">働く人の声</p>
+            <p class="text-center">
+              社員はより美味しい物をお客様に届けるために工夫し、お客様に美味しい物を食べて頂き
+              食べ物を通じてお客様を笑顔にし、
+              お客様の豊かな人生の1ページを作り上げられるように努力しております。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="titlepage">
+      <div class="titlepage col-sm7 mx-auto text-center mt-5">
+        <p>営業時間 : 10:00 - 17:30</p>
+        <p>TEL : 000-000-0000</p>
+        <p>住所 : 〒 983-0852 宮城県仙台市宮城野区榴ヶ岡1-6-30</p>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: true, distance: "60px", duration: 2000 });
+      ScrollReveal().reveal(".title", { delay: 200, origin: "left" });
+      ScrollReveal().reveal("h2", { delay: 200, origin: "left" });
+    </script>
+  </body>
+</html>
